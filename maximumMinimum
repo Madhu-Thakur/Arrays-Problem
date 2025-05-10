@@ -1,0 +1,19 @@
+public class maxMin {
+    
+        public static void main(String[] args) {
+            long[] numbers = {100, 200, 300, 400, 500};
+            long minValue = Long.MAX_VALUE;
+            long maxValue = Long.MAX_VALUE;
+           
+            // Finding the minimum value in the array
+            for (long num : numbers) {
+                if (num < minValue || num>maxValue) {
+                    minValue = num;
+                    maxValue =num;
+                }
+            }
+            System.out.println("The maximum value a long can hold is: " + maxValue);
+            System.out.println("The minimum value is: " + minValue);  // Output: The minimum value is: 100
+        }
+    }
+
