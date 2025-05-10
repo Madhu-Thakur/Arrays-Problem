@@ -1,0 +1,15 @@
+public class reverseStringInArray {
+  public static void main(String[] args) {
+    String[] fruits = {"Apple", "Banana", "Cherry", "Date", "Elderberry"};
+    for(int i=0;i<fruits.length;i++){
+        String b = fruits[i];
+        String rev = "";
+        for(int j=0;j<b.length();i++){
+           
+            char c =b.charAt(j);
+            rev = c + rev;
+        }
+        System.out.println(rev);
+    }
+  }  
+}
