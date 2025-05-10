@@ -1,0 +1,34 @@
+public class charArrayWithAsciiValue {
+    public static void main(String[] args) {
+        char a[] = {'N','O','2','6',' ','S','o','u','n','d'};
+        for(int i=0; i<a.length;i++){
+            System.out.println(a[i]+" "+ (int)a[i]);
+        }
+        
+        for(int i=0; i<a.length;i++){
+            System.out.println( i+1 + " "+ a[i]+" " + (int)a[i]);
+        }
+         //uppercase character in array
+         for(int i= 0;i<a.length;i++){
+            if(Character.isUpperCase( a[i])){
+                System.out.println(a[i]);
+            }
+        }
+            //lowercase
+            for(int i= 0;i<a.length;i++){
+                if(Character.isLowerCase( a[i])){
+                    System.out.println(a[i]);
+                }
+         }
+         for(int i= 0;i<a.length;i++){
+            if(Character.isDigit( a[i])){
+                System.out.println(a[i]);
+            }
+    }
+    for(int i= 0;i<a.length;i++){
+        if(!Character.isWhitespace(a[i])){
+            System.out.println(a[i]);
+        }
+}
+    }
+}
