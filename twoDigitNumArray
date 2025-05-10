@@ -1,0 +1,30 @@
+
+public class twoDigitNumArray {
+    public static void main(String[] args) {
+        int arr[] = { 23, 3, 4, 56, 7, 6, 8, 77, 12 };
+        // two digit number
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 9 && arr[i] < 100) {
+                System.out.println(arr[i]);
+            }
+        }
+        // positive number
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                System.out.println(arr[i]);
+            }
+        }
+        // divisible number
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 5 == 0) {
+                System.out.println(arr[i]);
+            }
+        }
+        // ending with 7
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 10 == 7) {
+                System.out.println(arr[i]);
+            }
+        }
+    }
+}
