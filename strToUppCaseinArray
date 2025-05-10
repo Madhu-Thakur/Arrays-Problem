@@ -1,0 +1,25 @@
+public class strToUppCaseinArray {
+    public static void main(String[] args) {
+        String[] fruits = {"Apple", "Banana", "Cherry", "Date", "Elderberry"};
+        // for(int i=0;i<fruits.length;i++){
+        //     String s = fruits[i].toUpperCase();
+        //     System.out.print(s);
+        // }
+
+        // for(int i=0;i<fruits.length;i++){
+        // char F = fruits[i].charAt(0);
+        // F = Character.toUpperCase(F);
+        // String E = fruits[i].substring(1);
+        // System.out.println(F + E);
+        // }
+
+        for(int i = 0; i<fruits.length;i++){
+            char F = fruits[i].charAt(0);
+            int len = fruits[i].length();
+            char L = fruits[i].charAt(len-1);
+            String M = fruits[i].substring(1,len-1);
+            System.out.println(L + M + F);
+        }
+
+    }
+}
