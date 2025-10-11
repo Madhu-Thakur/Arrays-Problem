@@ -9,5 +9,6 @@ public class changingTheCaseUpAndDwn {
             s += Character.toUpperCase(i);
         }
         System.out.println(s);
+
    } 
 }
